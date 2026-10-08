@@ -82,11 +82,24 @@ h3{
 /*Adjusting the space above the skill description*/
 .skill-description{
     margin-top: 3px;
+    margin-bottom: 6px;
+}
+
+/*Adjusting the space above the skill price*/
+.skill-price{
+    margin-top: 3px;
+    margin-bottom: 6px;
+}
+
+/*Adjusting the space above the skill provider*/
+.skill-provider{
+    margin-top: 3px;
+    margin-bottom: 6px;
 }
 
 /*putting each skill into boxes*/
 .skills{
-    display: block; 
+    display: grid; 
     max-width: 500px;               
     margin: auto;        
     background-color: lightgoldenrodyellow;  
@@ -97,13 +110,53 @@ h3{
     margin-top: 10px;
 }
 
+/*layout when the mouse havoers over the skill cards*/
+.skills.mouse-hovered{
+    box-shadow: 5px 5px;
+    border: 10px double;
+}
+
+/*styling the skill name*/
+.skill-name{
+    margin-top: 0px;
+}
+
+/*putting the detail into a box*/
+.skill-detail {
+    display: block;
+    border: 2px solid lightslategray;
+    border-radius: 5px;
+    background-color: bisque;
+    max-width: 350px;
+    margin: auto;
+    padding: 5px 10px;
+}
+
+/*change the color of detail box by hover*/
+.skill-detail:hover{
+    background-color: lightslategrey;
+}
+
+/*remove the detail description content from the page as a default*/
+.detail-description {
+    display: none;
+}
+
+/*display the detail description content when it is assigned active*/
+.detail-description.active {
+    display: block;
+    font-size: 20px;
+    border: 1px dashed lightslategray;
+    background-color: lightcyan;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 /*styling the footer*/
 #contact-info{
     font-size: 20px;
     margin-top: 50px;
 }
-
-
 
 /*adjusting all the styles for smaller screens*/
 @media (max-width: 600px) {
@@ -150,16 +203,23 @@ h3{
         margin-top: 30px;
     }
 
-    .skill-description{
-        margin-top: 3px;
-    }
-
     .skills{
         max-width: 350px;               
         border: 4px double;
         border-radius: 10px;
         padding: 5px 10px;
         margin-top: 10px;
+    }
+
+    .skill-detail {
+        max-width: 200px;
+        padding: 2px 5px;
+    }   
+
+    .detail-description.active {
+    font-size: 14px;
+    padding: 3px 5px;
+    border-radius: 3px;
     }
 
     #contact-info{
