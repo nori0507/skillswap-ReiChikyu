@@ -22,3 +22,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 })
 
+/*execute the function that changes the visual of the skill crads when the mouse havors over them */
+document.addEventListener("DOMContentLoaded",() =>{
+    /*getting all skills(cards)*/
+    const skillCard= document.querySelectorAll(".skills")
+    
+    /*Actions are assigned for each card*/
+    skillCard.forEach((card) => {
+        /*.skills.mouse-hovered layout assigned when the mouse hovers over the card*/
+        card.addEventListener("mouseenter", () => {
+            card.classList.add("mouse-hovered");
+        })
+        /*.skills.mouse-hovered layout removed when the mouse leaves the card*/
+        card.addEventListener("mouseleave", () =>{
+            card.classList.remove("mouse-hovered");
+        })
+    })
+})
+

@@ -110,6 +110,12 @@ h3{
     margin-top: 10px;
 }
 
+/*layout when the mouse havoers over the skill cards*/
+.skills.mouse-hovered{
+    box-shadow: 5px 5px;
+    border: 10px double;
+}
+
 /*styling the skill name*/
 .skill-name{
     margin-top: 0px;
