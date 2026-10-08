@@ -145,9 +145,11 @@ h3{
 /*display the detail description content when it is assigned active*/
 .detail-description.active {
     display: block;
+    font-size: 20px;
     border: 1px dashed lightslategray;
     background-color: lightcyan;
     padding: 5px 10px;
+    border-radius: 5px;
 }
 
 /*styling the footer*/
@@ -213,6 +215,12 @@ h3{
         max-width: 200px;
         padding: 2px 5px;
     }   
+
+    .detail-description.active {
+    font-size: 14px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    }
 
     #contact-info{
         font-size: 16px;
