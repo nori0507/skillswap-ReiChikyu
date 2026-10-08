@@ -82,11 +82,24 @@ h3{
 /*Adjusting the space above the skill description*/
 .skill-description{
     margin-top: 3px;
+    margin-bottom: 6px;
+}
+
+/*Adjusting the space above the skill price*/
+.skill-price{
+    margin-top: 3px;
+    margin-bottom: 6px;
+}
+
+/*Adjusting the space above the skill provider*/
+.skill-provider{
+    margin-top: 3px;
+    margin-bottom: 6px;
 }
 
 /*putting each skill into boxes*/
 .skills{
-    display: block; 
+    display: grid; 
     max-width: 500px;               
     margin: auto;        
     background-color: lightgoldenrodyellow;  
@@ -97,13 +110,32 @@ h3{
     margin-top: 10px;
 }
 
+/*styling the skill name*/
+.skill-name{
+    margin-top: 0px;
+}
+
+/*putting the detail into a box*/
+.skill-detail {
+    display: block;
+    border: 2px solid lightslategray;
+    border-radius: 5px;
+    background-color: bisque;
+    max-width: 350px;
+    margin: auto;
+    padding: 5px 10px;
+}
+
+/*change the color of detail box by hover*/
+.skill-detail:hover{
+    background-color: lightslategrey;
+}
+
 /*styling the footer*/
 #contact-info{
     font-size: 20px;
     margin-top: 50px;
 }
-
-
 
 /*adjusting all the styles for smaller screens*/
 @media (max-width: 600px) {
@@ -148,10 +180,6 @@ h3{
 
     #skilloffer-head{
         margin-top: 30px;
-    }
-
-    .skill-description{
-        margin-top: 3px;
     }
 
     .skills{
