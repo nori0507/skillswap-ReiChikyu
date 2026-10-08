@@ -131,6 +131,19 @@ h3{
     background-color: lightslategrey;
 }
 
+/*remove the detail description content from the page as a default*/
+.detail-description {
+    display: none;
+}
+
+/*display the detail description content when it is assigned active*/
+.detail-description.active {
+    display: block;
+    border: 1px dashed lightslategray;
+    background-color: lightcyan;
+    padding: 5px 10px;
+}
+
 /*styling the footer*/
 #contact-info{
     font-size: 20px;
@@ -189,6 +202,11 @@ h3{
         padding: 5px 10px;
         margin-top: 10px;
     }
+
+    .skill-detail {
+        max-width: 200px;
+        padding: 2px 5px;
+    }   
 
     #contact-info{
         font-size: 16px;
